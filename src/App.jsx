@@ -37,7 +37,9 @@ const App = () => {
       <GetDate />
       <Contador todos={todos} />
       <Todos todos={todos} />
-      <AddTodo onClick={() => setButtonForm(true)} />
+      <div class="btn-container">
+        <AddTodo onClick={() => setButtonForm(true)} />
+      </div>
       <Popup trigger={buttonForm} setTrigger={setButtonForm}>
         <ModalForm setTrigger={setButtonForm} submit={submit} />
       </Popup>
