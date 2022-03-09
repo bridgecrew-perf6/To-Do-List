@@ -1,10 +1,12 @@
 {
+  "homepage":"https://sergiiop.github.io/To-Do-List",
   "name": "to-do-app",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
+    "gh-pages": "^3.2.3",
     "vite": "^2.8.0"
   }
 }
