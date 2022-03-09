@@ -1,0 +1,16 @@
+.container__radio {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.container__radio label {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container__radio-input {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

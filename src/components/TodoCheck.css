@@ -1,0 +1,38 @@
+.todo__check {
+  position: relative;
+}
+
+.todo__check::before {
+  position: absolute;
+  content: '';
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.todo__check:checked::before {
+  background-color: #77e6b6;
+  border: 1px solid #77e6b6;
+  transition: 0.3s all ease;
+}
+
+.todo__check:checked::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  transform: rotate(45deg);
+  right: 20%;
+  bottom: 1%;
+  height: 16px;
+  width: 8px;
+  border-bottom: 3px solid #356651;
+  border-right: 3px solid #356651;
+  transition: 0.3s all ease;
+}

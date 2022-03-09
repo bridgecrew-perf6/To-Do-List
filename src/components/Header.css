@@ -1,0 +1,18 @@
+.header__container {
+  color: #474747;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.title,
+.subtitle {
+  font-weight: 500;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}

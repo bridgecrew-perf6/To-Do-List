@@ -1,0 +1,9 @@
+.layout__container {
+  background-color: #ffffff;
+  color: #0a283e;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 3rem;
+}

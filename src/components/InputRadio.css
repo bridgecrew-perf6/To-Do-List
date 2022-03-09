@@ -1,0 +1,81 @@
+.input-radio {
+  position: relative;
+}
+
+.input-radio::before {
+  content: '';
+  height: 40px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.1s all ease;
+  background-color: #fff;
+  color: #000;
+}
+
+.work-input::before {
+  content: 'Work';
+  border: 1px solid #a2401b;
+  background-color: #febb9d;
+  color: #a2401b;
+}
+
+.work-input:checked::before {
+  background-color: #e89584;
+}
+
+.family-input:checked::before {
+  background-color: #a2d2df;
+}
+
+.school-input:checked::before {
+  background-color: #d38deb;
+}
+
+.high-input:checked:before {
+  background-color: #ff5d5d;
+}
+
+.medium-input:checked:before {
+  background-color: #ff8a54;
+}
+
+.low-input:checked:before {
+  background-color: #41cca5;
+}
+
+.family-input::before {
+  content: 'Family';
+  border: 1px solid #0158ad;
+  background-color: #d3e3f2;
+  color: #0158ad;
+}
+
+.school-input::before {
+  content: 'School';
+  border: 1px solid #83007d;
+  background-color: #ffbcfc;
+  color: #83007d;
+}
+
+.high-input::before {
+  content: 'High';
+  border: 1px solid #ff5d5d;
+}
+
+.low-input::before {
+  content: 'Low';
+  border: 1px solid #03c38e;
+}
+
+.medium-input::before {
+  content: 'Medium';
+  border: 1px solid #ff8a54;
+}

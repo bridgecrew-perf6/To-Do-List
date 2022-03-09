@@ -1,0 +1,26 @@
+.todo__item-category {
+  width: 50px;
+  height: 22px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work {
+  background-color: #febb9d;
+  color: #a2401b;
+}
+
+.family {
+  background-color: #d3e3f2;
+  color: #0158ad;
+}
+
+.school {
+  background-color: #ffbcfc;
+  color: #83007d;
+}

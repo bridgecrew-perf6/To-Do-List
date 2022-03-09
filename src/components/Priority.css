@@ -1,0 +1,23 @@
+.todo__item-priority {
+  color: white;
+  width: 50px;
+  height: 25px;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.high {
+  background-color: #ff5d5d;
+}
+
+.low {
+  background-color: #03c38e;
+}
+
+.medium {
+  background-color: #ff8a54;
+}
