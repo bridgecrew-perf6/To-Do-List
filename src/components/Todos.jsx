@@ -1,11 +1,11 @@
 import TodoItem from './TodoItem';
 import './Todos.css';
 
-const Todos = ({ todos }) => {
+const Todos = ({ todos, handleContador }) => {
   return (
     <div className="todos__container">
       {todos.map((todo) => (
-        <TodoItem key={todo.name} todo={todo} />
+        <TodoItem key={todo.name} handleContador={handleContador} todo={todo} />
       ))}
     </div>
   );

@@ -10,12 +10,15 @@ import ModalName from './components/ModalName';
 import Button from './components/Button';
 import Popup from './components/Popup';
 import ModalForm from './components/ModalForm';
+import useContador from './hooks/useContador';
 
 const App = () => {
   const [todos, setTodos] = useState([]);
   const [nombre, setNombre] = useState('');
   const [buttonPopup, setButtonPopup] = useState(false);
   const [buttonForm, setButtonForm] = useState(false);
+
+  const [contador, handleContador] = useContador(0, todos);
 
   const submit = (todo) => {
     setTodos([...todos, todo]);
@@ -35,9 +38,9 @@ const App = () => {
     <Layout>
       <Header nombre={nombre} />
       <GetDate />
-      <Contador todos={todos} />
-      <Todos todos={todos} />
-      <div class="btn-container">
+      <Contador totalTodos={todos.length} completed={contador} />
+      <Todos todos={todos} handleContador={handleContador} />
+      <div className="btn-container">
         <AddTodo onClick={() => setButtonForm(true)} />
       </div>
       <Popup trigger={buttonForm} setTrigger={setButtonForm}>

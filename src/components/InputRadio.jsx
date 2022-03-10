@@ -13,7 +13,6 @@ const CLASS_NAMES = {
 const InputRadio = ({ value, handleChange, name, checked }) => {
   const className =
     `${CLASS_NAME_DEFAULT} ${CLASS_NAMES[value]}` || CLASS_NAME_DEFAULT;
-  console.log(value);
   return (
     <input
       required

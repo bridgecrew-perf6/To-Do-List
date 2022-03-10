@@ -9,7 +9,7 @@ const ModalForm = ({ submit, setTrigger }) => {
     name: '',
     priority: '',
     category: '',
-    done: false,
+    done: null,
   });
 
   const handleSubmit = (e) => {

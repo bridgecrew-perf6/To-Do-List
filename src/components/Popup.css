@@ -12,13 +12,14 @@
 
 .popup-inner {
   position: relative;
-  padding: 32px;
-  width: 100%;
-  max-width: 640px;
+  padding: 50px 32px;
+  width: 80%;
+  max-width: 450px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 6px;
 }
 
 .popup-inner .add-name {

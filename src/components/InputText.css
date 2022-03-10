@@ -1,12 +1,8 @@
-.field {
-  margin-bottom: 20px;
-}
-
 .input-text {
   background-color: #fff;
   outline: none;
   font-size: 2rem;
-  width: 100%;
+  width: 80%;
   border-radius: 4px;
   background: none;
   color: #706c6c;
@@ -14,4 +10,6 @@
   border: none;
   border: 1px solid rgb(34, 34, 34, 0.15);
   margin-bottom: 20px;
+  text-align: center;
+  align-self: center;
 }

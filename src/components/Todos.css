@@ -1,6 +1,6 @@
 .todos__container {
   height: 60vh;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 3.5rem;

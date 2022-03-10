@@ -1,10 +1,12 @@
-const Contador = ({ todos }) => {
-  const myCount = todos.reduce((acc, item) => (item.done ? acc + 1 : acc), 0);
+const styles = {
+  fontSize: '1.5rem',
+};
 
+const Contador = ({ totalTodos, completed }) => {
   return (
-    <div>
-      Has completado {myCount} de {todos.length} Tareas
-    </div>
+    <p style={styles}>
+      Has completado {completed} de {totalTodos} Tareas
+    </p>
   );
 };
 
