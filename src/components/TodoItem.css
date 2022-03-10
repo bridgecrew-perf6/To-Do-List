@@ -1,7 +1,7 @@
 .todo__item-container {
   position: relative;
   display: flex;
-  height: 100px;
+  min-height: 100px;
   border: 1px solid #d3d3d3;
   border-radius: 10px;
   align-items: center;
