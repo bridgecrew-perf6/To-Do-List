@@ -1,5 +1,5 @@
 {
-  "homepage":"https://sergiiop.github.io/To-Do-List",
+  "homepage": "https://sergiiop.github.io/To-Do-List",
   "name": "to-do-app",
   "private": true,
   "version": "0.0.0",
@@ -12,7 +12,9 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.2.0",
+    "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

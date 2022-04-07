@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const useTodo = (inicial) => {
   const [todo, setTodo] = useState(inicial);
 
-  const handleChange = (e) => {
-    setTodo({
-      ...todo,
-      [e.target.name]: e.target.value,
-    });
+  const handleChange = ({ target }) => {
+    setTodo((state) => ({
+      ...state,
+      [target.name]: target.type === "checkbox" ? target.checked : target.value,
+    }));
   };
 
   const reset = () => {
