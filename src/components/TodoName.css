@@ -1,4 +1,5 @@
 .todo__title {
   font-size: 1.6rem;
-  margin-left: 7%;
+  position: absolute;
+  left: 8rem;
 }

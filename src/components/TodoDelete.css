@@ -1,0 +1,10 @@
+.todo__delete {
+  position: absolute;
+  right: 9rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ef233c;
+  cursor: pointer;
+}
