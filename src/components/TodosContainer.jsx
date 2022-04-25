@@ -6,9 +6,13 @@ import ModalForm from './ModalForm'
 import Popup from './Popup'
 import useContador from '../hooks/useContador'
 import TodoSearch from './TodoSearch'
+import useLocalStorage from '../hooks/useLocalStorage'
 
 const TodosContainer = () => {
-  const [todos, setTodos] = useState([])
+  const { item: todos, saveItem: setTodos, loading, error } = useLocalStorage(
+    'TODOS_V1',
+    []
+  )
   const [buttonForm, setButtonForm] = useState(false)
   const [contador, handleContador] = useContador(0, todos)
 
@@ -27,6 +31,8 @@ const TodosContainer = () => {
         todos={todos}
         handleContador={handleContador}
         setTodos={setTodos}
+        loading={loading}
+        error={error}
       />
       <div className='btn-container'>
         <AddTodo onClick={() => setButtonForm(true)} />

@@ -1,8 +1,16 @@
 import { useEffect } from 'react'
+import Spinner from './Spinner'
 import TodoItem from './TodoItem'
 import './Todos.css'
 
-const Todos = ({ todos, handleContador, setTodos, searchValue }) => {
+const Todos = ({
+  todos,
+  handleContador,
+  setTodos,
+  searchValue,
+  loading,
+  error
+}) => {
   const eliminarTodo = name => {
     setTodos(prev => prev.filter(item => item.name !== name))
   }
@@ -15,14 +23,7 @@ const Todos = ({ todos, handleContador, setTodos, searchValue }) => {
   }
 
   useEffect(() => {
-    if (localStorage.getItem('todos')) {
-      setTodos(JSON.parse(localStorage.getItem('todos')))
-    }
-  }, [])
-
-  useEffect(() => {
     handleContador()
-    localStorage.setItem('todos', JSON.stringify(todos))
   }, [todos])
 
   let newTodos = []
@@ -35,6 +36,9 @@ const Todos = ({ todos, handleContador, setTodos, searchValue }) => {
 
   return (
     <div className='todos__container'>
+      {error && <p>Hubo un error</p>}
+      {loading && <Spinner />}
+      {!loading && newTodos.length === 0 && <p>¡Crea tu primer TODO!</p>}
       {newTodos.map(todo => (
         <TodoItem
           key={todo.name}
